@@ -128,6 +128,7 @@ footer p {
     padding: 1vh 2vw;
 }
 footer section {
+    flex: auto;
     width: 400px;
 }
 ul {
