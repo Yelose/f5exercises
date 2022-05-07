@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.triangle {
+    height: 50px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid yellow;
+    flex: 0 0 50px;
+    margin: 20px;
+    visibility: visible;
+}
+.triangle:hover {
+    border-bottom: 50px solid orangered;
+    margin: 10px 20px 20px 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.square {
+    height: 50px;
+    background-color: red;
+    flex: 0 0 50px;
+    margin: 20px;
+    visibility: visible;
+}
+.square:hover{
+    background-color: rgb(86, 23, 88);
+    margin: 10px 20px 20px 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.circle {
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    flex: 0 0 50px;
+    margin: 20px;
+    visibility: visible;
+}
+.circle:hover {
+    background-color: blue;
+    margin: 10px 20px 20px 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.shape {
+    transition: ease-out 1s;
+}

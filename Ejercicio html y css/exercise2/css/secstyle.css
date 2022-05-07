@@ -1,0 +1,114 @@
+
+.bgblack {
+    background-color: black;
+    flex-basis: 16%;
+}
+.bgteal {
+    background-color: teal;
+    flex-basis: 16%;
+}
+.bgblue {
+    background-color: blue;
+    flex-basis: 18%;
+}
+.bgnavy {
+    background-color: navy;
+    flex-basis: 15%;
+}
+.bglime {
+    background-color: lime;
+    flex-basis: 20%;
+}
+.bgwhite {
+    background-color: white;
+    flex-basis: 15%;
+}
+.bgpurple {
+    background-color: purple;
+    flex-basis: 16%;
+}
+.bgyellow {
+    background-color: yellow;
+    flex-basis: 16%;
+}
+.bgolive {
+    background-color: olive;
+    flex-basis: 18%;
+}
+.bgred {
+    background-color: red;
+    flex-basis: 15%;
+}
+.bgblac {
+    background-color: black;
+    flex-basis: 20%;
+}
+.bggray {
+    background-color: gray;
+    flex-basis: 15%;
+}
+.bgoliv {
+    background-color: olive;
+    flex-basis: 16%;
+}
+.bgredd {
+    background-color: red;
+    flex-basis: 16%;
+}
+.bgfuchsia {
+    background-color: fuchsia;
+    flex-basis: 18%
+}
+.bggreen {
+    background-color: green;
+    flex-basis: 50%;
+}
+
+.tblack {
+    color: black;
+}
+.tteal {
+    color: teal;
+}
+.tblue {
+    color: blue;
+}
+.tnavy {
+    color: navy;
+}
+.tlime {
+    color: lime;
+}
+.twhite {
+    color: white;
+}
+.tpurple {
+    color: purple;
+}
+.tyellow {
+    color: yellow;
+}
+.tmarron {
+    color: rgb(39, 0, 0);
+}
+.tred {
+    color: red;
+}
+.tgray {
+    color: gray;
+}
+.tolive {
+    color: olive;
+}
+.tfuchsia {
+    color: fuchsia;
+}
+.tgreen {
+    color: green;
+}
+.taqua {
+    color: aqua;
+}
+.tsilver {
+    color: silver;
+}

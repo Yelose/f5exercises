@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+header {
+    min-height: 450px;
+    color: whitesmoke;
+    text-align: center;
+}
+header h1 {
+    padding-top: calc(3vh + 2vw + 20px);
+}
+/* clamp(tamaño mínimo, tamaño relativo deseado, tamaño máximo) */
+.content-wrap p {
+    padding: calc(2vh + 10px) calc(15vw - 15px);
+    font-size: clamp(15px, 1.5vw, 24px);
+}
+.btn{
+    border: solid 1px beige;
+    padding: calc(10px + 1vh) calc(15px + 2vw);
+    margin-top: calc(4vh - 15px);
+    cursor: pointer;
+    background-color: #333;
+    transition: background-color 1s ease;
+    }
+/* border = top, right, left, bottom // width, style, color */
+.btn:hover {
+    background-color: grey;
+    border-color: #333;
+    transition: background-color 1s ease;
+    transition: border-color 1s linear;
+}
+/* The animation-timing-function property can have the following values:
+
+ease - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - Specifies an animation with the same speed from start to end
+ease-in - Specifies an animation with a slow start
+ease-out - Specifies an animation with a slow end
+ease-in-out - Specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function */
+
+.content-wrap a:hover {
+    color: rgb(15, 15, 15);
+    transition: color 1s linear;
+}
+.content-wrap a {
+    color: beige;
+    text-decoration: none;
+    font-size: clamp(18px, 1.5vw, 28px);
+    transition: color 0.8s linear;
+}
+header .bg-image {
+    position: absolute;
+    background: url(pexels-photo-248515.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    opacity: 0.4;
+    z-index: -1;
+}
+div .content-wrap {
+    color: white;
+    text-align: center;
+    z-index: 10;
+    padding: 0 5vw;
+}
+h1 {
+    font-size: clamp(24px, 3vw - 5px, 48px);
+}
+/* clamp(tamaño mínimo, tamaño relativo deseado, tamaño máximo) */

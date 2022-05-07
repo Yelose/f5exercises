@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(180, 92%, 3%);
+    color: hsl(180, 92%, 95%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: azure;
+}
+h1 {
+    font-size: clamp(28px, 5vw, 56px);
+    text-shadow: 2px 2px 5px hsl(180, 92%, 30%);
+    padding: 1vw;
+    color: hsl(180, 92%, 20%);
+    text-align: center;
+}
+header img {
+    padding-left: 1vw;
+}
+
+hr {
+    border: 5vw dotted hsl(180, 92%, 28%);
+    background-color: hsl(180, 92%, 30%);
+    border-radius: 2vw;
+    margin: 3vw;
+
+}
+main {
+    margin: 10vw;
+}
+
+h2 {
+    font-size: clamp(20px, 4vw, 38px);
+    color: hsl(180, 92%, 10%);
+    text-align: center;
+    padding: 2vw 2vh;
+    background-color: hsl(180, 92%, 80%);
+    text-shadow: 2px 2px 3px hsl(180, 92%, 70%);
+}
+h3 {
+    font-size: clamp(17px, 3.5vw, 36px);
+    color: hsl(180, 92%, 30%);
+    margin-left: 5vw;
+    padding: 1vw;
+}
+
+h4 {
+    font-size: clamp(15px, 3vw, 28px);
+    color: hsl(180, 92%, 80%);
+    padding: 1vw;
+}
+
+a {
+    color:  hsl(180, 92%, 60%);
+}
+section {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+article {
+    margin: 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: .25;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+}
+.fondo {
+    width: 60vw;
+    height: 40vw;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 600px;
+    max-height: 400px;
+}
+.tittles {
+    background-image: url(img/titulos.PNG);
+
+}
+.colors {
+    background-image: url(img/colores.PNG);
+
+}
+article img {
+    flex-shrink: 0.25;
+}
+.done {
+    text-decoration: none;
+    background-color:  hsl(180, 92%, 10%);
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 1vw;
+    box-shadow: 1px 2px 1px hsl(180, 92%, 20%);
+    text-align: center;
+}
+ol {
+    padding: 1vw;
+}
+ol li {
+    margin-left: 3vw;
+}
+footer {
+    display: flex;
+    background-color: hsl(180, 92%, 10%);
+    padding: 5vw;
+    flex-flow: row wrap;
+    justify-content: space-around;
+} 
+footer p {
+    padding: 1vh 2vw;
+}
+footer section {
+    min-width: 400px;
+}
+ul {
+    padding: 0 4vw;
+}
+.frustration {
+    align-self: center;
+    background-color: hsl(180, 92%, 4%) ;
+    padding-bottom: 4vw;
+    margin-top: 3vw;
+}
