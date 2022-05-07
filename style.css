@@ -35,7 +35,7 @@ hr {
 
 }
 main {
-    margin: 10vw;
+    margin: 5vh 10vw;
 }
 
 h2 {
@@ -51,6 +51,8 @@ h3 {
     color: hsl(180, 92%, 30%);
     margin-left: 5vw;
     padding: 1vw;
+    margin-top: 3vh;
+
 }
 
 h4 {
@@ -65,6 +67,7 @@ a {
 section {
     display: flex;
     flex-flow: column wrap;
+    padding: 1vh 2vw;
 }
 
 
@@ -82,7 +85,7 @@ article {
     height: 40vw;
     background-position: cover;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     max-width: 600px;
     max-height: 400px;
 }
@@ -94,9 +97,7 @@ article {
     background-image: url(img/colores.PNG);
 
 }
-article img {
-    flex-shrink: 0.25;
-}
+
 .done {
     text-decoration: none;
     background-color:  hsl(180, 92%, 10%);
