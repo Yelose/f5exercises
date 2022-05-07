@@ -83,7 +83,7 @@ article {
 .fondo {
     width: 60vw;
     height: 40vw;
-    background-position: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 600px;
@@ -95,9 +95,13 @@ article {
 }
 .colors {
     background-image: url(img/colores.PNG);
-
 }
 
+.shapes {
+    background-image: url(img/shapes.PNG);
+    max-width: 400px;
+    max-height: 300px;
+}
 .done {
     text-decoration: none;
     background-color:  hsl(180, 92%, 10%);
@@ -135,3 +139,4 @@ ul {
     padding-bottom: 4vw;
     margin-top: 3vw;
 }
+
