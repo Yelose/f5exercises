@@ -128,7 +128,7 @@ footer p {
     padding: 1vh 2vw;
 }
 footer section {
-    min-width: 400px;
+    width: 400px;
 }
 ul {
     padding: 0 4vw;
