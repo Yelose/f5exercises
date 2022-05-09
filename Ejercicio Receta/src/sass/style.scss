@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    margin-bottom: 1.5vh;
+}
+
+body {
+    background-color: hsl(350, 100%, 95%);
+    display: flex;
+    flex-direction: column;
+    header {
+        width: 100%;
+        h1 {
+            text-align: center;
+            color:  hsl(350, 100%, 15%);
+            padding: 2vh 3vw;
+        }      
+        .pancakes-img {
+            background-image: url(../../public/img/pancakes.jpg);
+            width: 100vw;
+            height: 40vh;
+            background-color: black;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }             
+    }
+    main {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        section {
+            width: 80%;
+            padding: 2vh 3vw;
+            div {
+                display: flex;
+                flex-flow: column nowrap;
+                div {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    padding: .5vh 0;
+                    input {
+                        align-self: center;
+                    }
+                    label {
+                        padding: 0.1em 1vh;
+                        align-self: center
+                    }
+                }
+            }
+            ol {
+                display: flex;
+                flex-flow: row wrap;
+                max-width: 350px;
+                list-style: none;
+                padding-left: 40px;
+                counter-reset: m;
+                li {
+                    margin-left: 40px;
+                    counter-increment: m;
+                    position: relative;
+                    margin: 0 0 40px 0;
+                }
+                li::before {
+                    content: counter(m);
+                    color: red;
+                    font-size: 1.5em;
+                    background-color: pink;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    left: -40px;
+                    padding: 10px;
+                }
+            }
+        }
+        aside {
+            width: 20%;
+            padding: 2vh 3vw;
+            background-color: white;
+            border-radius: 20px;
+        }
+    }
+}
+
