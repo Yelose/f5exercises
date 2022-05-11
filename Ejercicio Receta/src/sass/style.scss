@@ -5,14 +5,17 @@
 }
 h2 {
     margin-bottom: 1.5vh;
+    color: hsl(350, 100%, 15%);
 }
 
 body {
     background-color: hsl(350, 100%, 95%);
     display: flex;
     flex-direction: column;
+    width: 100%;
     header {
         width: 100%;
+        margin-bottom: 50px;
         h1 {
             text-align: center;
             color:  hsl(350, 100%, 15%);
@@ -20,7 +23,7 @@ body {
         }      
         .pancakes-img {
             background-image: url(../../public/img/pancakes.jpg);
-            width: 100vw;
+            width: 100%;
             height: 40vh;
             background-color: black;
             background-position: center;
@@ -52,38 +55,63 @@ body {
                     }
                 }
             }
+            }
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            padding: 2vh 3vw;
+            background-color: white;
+            border-radius: 20px;
+            justify-content: space-between;
+        }
+        .preparation {
+            margin-top: 60px;
+            display: flex;
+            flex-flow: column nowrap;
+            width: 80%;
+            background-color: hsl(350, 100%, 85%) ;
+            padding-top: 50px;
+
             ol {
                 display: flex;
                 flex-flow: row wrap;
-                max-width: 350px;
                 list-style: none;
                 padding-left: 40px;
                 counter-reset: m;
+                justify-content: space-evenly;
                 li {
                     margin-left: 40px;
                     counter-increment: m;
                     position: relative;
-                    margin: 0 0 40px 0;
+                    margin: 5px 60px 60px 5px;
+                    max-width: 300px;
+                    text-align: justify;
+                    align-self: center;
                 }
                 li::before {
                     content: counter(m);
                     color: hsl(350, 100%, 15%);
                     font-size: 1.5em;
-                    background-color: hsl(350, 100%, 85%);
+                    background-color:  hsl(350, 100%, 95%);
                     border-radius: 50%;
                     position: absolute;
                     top: 0;
                     left: -40px;
                     padding: 10px;
                 }
-            }
+
         }
-        aside {
-            width: 20%;
-            padding: 2vh 3vw;
-            background-color: white;
-            border-radius: 20px;
-        }
+
+    }
+    footer {
+        background-color: hsl(350, 100%, 5%);
+        height: 100px;
+        color: hsl(350, 100%, 95%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
