@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 0 5vw;
 }
 body header {
   width: 100%;
@@ -27,21 +28,23 @@ body header h1 {
 body header .pancakes-img {
   background-image: url(../../public/img/pancakes.jpg);
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
+  justify-self: center;
 }
 body main {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 body main section {
-  width: 80%;
-  padding: 2vh 3vw;
+  width: 70vw;
+  padding: 4vh 3vw;
 }
 body main section div {
   display: flex;
@@ -59,22 +62,29 @@ body main section div div label {
   padding: 0.1em 1vh;
   align-self: center;
 }
+body .ingredients {
+  background-color: hsl(350deg, 100%, 98%);
+}
 body aside {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  padding: 2vh 3vw;
+  width: 15vw;
+  padding: 4vh 3vw;
   background-color: white;
   border-radius: 20px;
-  justify-content: space-between;
+  max-width: 200px;
+}
+body aside h2 {
+  padding-bottom: 1vh;
+}
+body aside div p {
+  padding-top: 1vh;
 }
 body .preparation {
   margin-top: 60px;
   display: flex;
   flex-flow: column nowrap;
-  width: 80%;
   background-color: hsl(350deg, 100%, 85%);
-  padding-top: 50px;
 }
 body .preparation ol {
   display: flex;
@@ -105,8 +115,9 @@ body .preparation ol li::before {
   padding: 10px;
 }
 body footer {
+  margin: 5vh 0;
   background-color: hsl(350deg, 100%, 5%);
-  height: 100px;
+  height: 7vh;
   color: hsl(350deg, 100%, 95%);
   display: flex;
   align-items: center;
