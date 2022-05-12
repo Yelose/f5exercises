@@ -85,7 +85,7 @@ article {
     height: 40vw;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     max-width: 600px;
     max-height: 400px;
 }
@@ -116,6 +116,9 @@ ol {
 }
 ol li {
     margin-left: 3vw;
+}
+.recipe {
+    background-image: url(img/recipe.PNG);
 }
 footer {
     display: flex;
