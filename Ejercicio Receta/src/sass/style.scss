@@ -82,47 +82,90 @@ body {
             margin-top: 60px;
             display: flex;
             flex-flow: column nowrap;
-            background-color: hsl(350, 100%, 85%) ;
+            background-image: url(/public/img/ingredients.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+            article {
+                width: 100%;
+                height: 100%;
+                background-color: hsl(350, 100%, 85%, 0.7) ;
+                padding: 4vh 3vw;
+                ol {
+                    display: flex;
+                    flex-flow: row wrap;
+                    list-style: none;
+                    padding-left: 40px;
+                    counter-reset: m;
+                    justify-content: space-evenly;
+                    li {
+                        counter-increment: m;
+                        position: relative;
+                        margin: 5px 60px 60px 5px;
+                        max-width: 300px;
+                        text-align: justify;
+                        align-self: center;
+                    }
+                    li::before {
+                        content: counter(m);
+                        color: hsl(350, 100%, 15%);
+                        font-size: 1.5em;
+                        background-color:  hsl(350, 100%, 95%);
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        left: -40px;
+                        padding: 10px;
+                    }
 
-            ol {
-                display: flex;
-                flex-flow: row wrap;
-                list-style: none;
-                padding-left: 40px;
-                counter-reset: m;
-                justify-content: space-evenly;
-                li {
-                    margin-left: 40px;
-                    counter-increment: m;
-                    position: relative;
-                    margin: 5px 60px 60px 5px;
-                    max-width: 300px;
-                    text-align: justify;
-                    align-self: center;
-                }
-                li::before {
-                    content: counter(m);
-                    color: hsl(350, 100%, 15%);
-                    font-size: 1.5em;
-                    background-color:  hsl(350, 100%, 95%);
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 0;
-                    left: -40px;
-                    padding: 10px;
-                }
+            }
 
         }
 
     }
     footer {
         margin: 5vh 0;
-        background-color: hsl(350, 100%, 5%);
         height: 7vh;
         color: hsl(350, 100%, 95%);
         display: flex;
         align-items: center;
         justify-content: center;
+        background-image: url(../../public/img/mosaico.jpg);
+        z-index: -1;
+        div {
+            display: flex;
+            background-color: hsl(350, 100%, 5%, 0.8);
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: hsl(350, 100%, 1%);
+            }
+            }
     }
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        header .pancakes-img {
+            height: 30vh;
+        }
+        aside {
+            margin-top: 6vh;
+            width: 100vw;
+            max-width: 100%;
+        }
+        main {
+            section {
+                width: 100vw;
+            }
+        }
+        .preparation article ol li {
+                margin: 5px 2vw 2vh 5px;
+            }
+        
+    }
+    
+}

@@ -84,9 +84,19 @@ body .preparation {
   margin-top: 60px;
   display: flex;
   flex-flow: column nowrap;
-  background-color: hsl(350deg, 100%, 85%);
+  background-image: url(/public/img/ingredients.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
 }
-body .preparation ol {
+body .preparation article {
+  width: 100%;
+  height: 100%;
+  background-color: hsla(350deg, 100%, 85%, 0.7);
+  padding: 4vh 3vw;
+}
+body .preparation article ol {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
@@ -94,8 +104,7 @@ body .preparation ol {
   counter-reset: m;
   justify-content: space-evenly;
 }
-body .preparation ol li {
-  margin-left: 40px;
+body .preparation article ol li {
   counter-increment: m;
   position: relative;
   margin: 5px 60px 60px 5px;
@@ -103,7 +112,7 @@ body .preparation ol li {
   text-align: justify;
   align-self: center;
 }
-body .preparation ol li::before {
+body .preparation article ol li::before {
   content: counter(m);
   color: hsl(350deg, 100%, 15%);
   font-size: 1.5em;
@@ -116,12 +125,41 @@ body .preparation ol li::before {
 }
 body footer {
   margin: 5vh 0;
-  background-color: hsl(350deg, 100%, 5%);
   height: 7vh;
   color: hsl(350deg, 100%, 95%);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(../../public/img/mosaico.jpg);
+  z-index: -1;
+}
+body footer div {
+  display: flex;
+  background-color: hsla(350deg, 100%, 5%, 0.8);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+body footer div p {
+  color: hsl(350deg, 100%, 1%);
+}
+
+@media only screen and (max-width: 600px) {
+  body header .pancakes-img {
+    height: 30vh;
+  }
+  body aside {
+    margin-top: 6vh;
+    width: 100vw;
+    max-width: 100%;
+  }
+  body main section {
+    width: 100vw;
+  }
+  body .preparation article ol li {
+    margin: 5px 2vw 2vh 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
