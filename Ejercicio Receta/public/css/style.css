@@ -84,7 +84,7 @@ body .preparation {
   margin-top: 60px;
   display: flex;
   flex-flow: column nowrap;
-  background-image: url(../../public/img/ingredients.jpg);
+  background-image: url(../img/ingredients.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
