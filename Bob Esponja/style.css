@@ -147,6 +147,42 @@ header> div {
     left: 365px;
     bottom: 185px;
 }
+.pestaña {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.pestañas-izq {
+    left: 50px;
+    top: -260px;
+}
+.pestañas-der {
+    left: 180px;
+    top: -410px;
+}
+.pelo {
+    width: 5px;
+    height: 20px;
+    background-color: black;
+}
+.izq {
+    position: relative;
+    transform: rotate(135deg);
+    top: 0;
+    left: 30px;
+}
+.med {
+    position: relative;
+    top: -30px;
+    margin: auto;
+}
+.der {
+    position: relative;
+    top: -40px;
+    left: 120px;
+    transform: rotate(45deg);
+}
+
 main {
     width: 400px;
     height: 80px;
