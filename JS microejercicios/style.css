@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    color: white;
+    font-size: clamp(15px, 4vw, 36px);
+}
+header p {
+    padding: 1vh 1vw;
+}
+h1 {
+    padding: 1vh 4vw;
+    text-align: center;
+}
+body {
+    background-color: gray;
+}
+header {
+    background-color: rgb(46, 46, 46);
+}
+main {
+    background-color: rgb(171, 171, 171);
+}
+.calculadora {
+    background-color: rgb(37, 37, 37);  
+    display: flex;
+    flex-direction: column;  
+    width: fit-content;
+    margin: auto;
+    padding: 1vh 2vw;
+}
+.calculadora div {
+    display: flex;
+    justify-content: space-around;
+}
+input {
+    width: 20%;
+    background-color: rgba(128, 128, 128, 0.316);
+}
+.igual {
+    background-color: gray;
+    border: none;
+    box-shadow: 3px 2px 2px black;
+}
+.igual:hover {
+    background-color: hsl(0, 0%, 70%) ;
+}
