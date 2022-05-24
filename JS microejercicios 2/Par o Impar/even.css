@@ -1,0 +1,12 @@
+.even-container {
+    display: flex;
+    justify-content: center;
+}
+.even-container div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin: 2vh 1vw;
+    align-items: center;
+    justify-content: center;
+}

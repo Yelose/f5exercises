@@ -25,7 +25,6 @@ function suma () {
     b = parseInt(document.getElementById("b").value);
     let c = a + b;
     document.querySelector(".resultado").innerHTML = `${c}`
-
 }
 
 

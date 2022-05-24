@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+header div {
+    width: 5vw;
+    height: 5vw;
+    min-width: 50px;
+    min-height: 50px;
+    background-image: url(/img/yo-peq.png);
+    background-position: center;
+    background-size: cover;
+}
+.higher-container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+p {
+    padding: 2vh 3vw;
+}
+input {
+    padding: 1vh 1vw;
+}
+.higher-btn {
+    color: white;
+}
