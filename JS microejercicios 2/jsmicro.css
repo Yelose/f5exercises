@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: center;
 }
-header div {
+header a div {
     width: 5vw;
     height: 5vw;
     min-width: 50px;
