@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="/JS microejercicios 2/Par o Impar/even.css">
     <script src="../JS microejercicios 2/Mayor o menor/main.js" defer></script>
+    <script src="../JS microejercicios 2/Par o Impar/even.js" defer></script>
+    <script src="../JS microejercicios 2/Vocales/aes.js" defer></script>
+    <script src="../JS microejercicios 2/Divisores/divisores2357.js" defer></script>
+    <script src="../JS microejercicios 2/Vocales/vocales.js" defer></script>
 </head>
 
 <body>
@@ -26,20 +30,60 @@
             <input id="higher-number-1" type="number" placeholder="write a number" value="">
             <input id="higher-number-2" type="number" placeholder="write a number" value="">
             <input id="higher-number-3" type="number" placeholder="write a number" value="">
-            <button class="higher-btn done" onclick="higher()">Result</button>
+            <button class="higher-btn done exercise-btn" onclick="higher()">Result</button>
         </div>
         <p id="result-higher"></p>
     </section>
     <hr>
-    <section class="even-container">
+    <section class="exercise-container">
         <h2>Is it odd or even?</h2>
         <div>
-            <p>Write a number and click on "Result"</p>
-            <input type="number" placeholder="write a number">
-            <button class="higher-btn done" onclick="evenOrOdd()">Result</button>
+            <p>Write a number and click on "Result" to check if its odd or even.</p>
+            <input class="even-odd" type="number" placeholder="write a number" value="">
+            <button class="higher-btn done exercise-btn" onclick="evenOrOdd()">Result</button>
         </div>
-
+        <p id="result-even"></p>
     </section>
+    <hr>
+    <section class="exercise-container">
+        <h2>Check how many As do have a sentence</h2>
+        <div>
+            <p>Write a sentence and click on "Result" to check how many "a" it has</p>
+            <input class="how-many-a-input" type="text" placeholder="write a sentence" value="">
+            <button class="a-text-btn done exercise-btn">Check</button>
+        </div>
+        <p id="result-aes"></p>
+    </section>
+    <section class="exercise-container">
+        <h2>Check how many vowels do have a sentence</h2>
+        <div>
+            <p>Write a sentence and click on "Result" to check how many vowels it has</p>
+            <input class="how-many-vowels-input" type="text" placeholder="write a sentence" value="">
+            <button class="vowels-text-btn done exercise-btn">Check</button>
+        </div>
+        <div id="result-vowels"></div>
+    </section>
+    <hr>
+    <section class="exercise-container">
+        <h2>Check if it is divisible by 2, 3, 5 or 7 </h2>
+        <div>
+            <p>Write a number and click on "Result</p>
+            <input class="divisible-2357-input" type="number" placeholder="write a number">
+            <button class="divisible-2357-btn done exercise-btn">Result</button>
+        </div>
+        <p id="result-divisible-2357"></p>
+    </section>
+    <hr>
+    <section class="exercise-container">
+        <h2>find divisors of a number</h2>
+        <div>
+            <p>Write a number and click on "Result</p>
+            <input class="divisors-input" type="number" placeholder="write a number">
+            <button class="divisors-btn done exercise-btn">Result</button>
+        </div>
+        <p class="result-divisors-text"></p>
+    </section>
+    <hr>
     <footer>
         <h4>Tools used</h4>
         <div>

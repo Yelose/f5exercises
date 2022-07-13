@@ -1,0 +1,214 @@
+:root {
+    --main-color: 240deg;
+    --dark: 8%;
+    --semi-dark: 25%;
+    --light: 98%;
+    --semi-light: 94%;
+    --bright: 100%;
+    --dull: 30%;
+    --text-dark: hsl(var(--main-color), var(--dull), var(--dark));
+    --text-semi-dark: hsl(var(--main-color), 50%, var(--semi-dark));
+    --text-light: hsl(var(--main-color), var(--bright), var(--light));
+    --text-semi-light: hsl(var(--main-color), 20%, 80%);
+    --background-light: hsl(var(--main-color), var(--bright), var(--light));
+    --background-semi-light: hsl(var(--main-color), var(--bright), var(--semi-light));
+    --background-dark: hsl(var(--main-color), var(--dull), var(--dark));
+    --background-semi-dark: hsl(var(--main-color), var(--dull), var(--semi-dark));
+    --padding-small: 2vw;
+    --padding-medium: 3vw;
+    --font-size: clamp(14px, 1.5vw, 20px);
+    --img-size: 3vw;
+    --img-max-size: 50px;
+    --img-min-size: 30px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10vh;
+}
+body > main {
+    display: flex;
+    padding: 0px 10vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-dark {
+    background-color: var(--background-dark);
+}
+.bg-semi-dark {
+    background-color: var(--background-semi-dark);
+}
+.bg-light{
+    background-color: var(--background-light);
+}
+.bg-semi-light{
+    background-color: var(--background-semi-light);
+}
+.txt-light {
+    color: var(--text-light);
+}
+.txt-dark {
+    color: var(--text-dark);
+}
+.txt-semi-dark {
+    color: var(--text-semi-dark);
+}
+.txt-semi-light{
+    color: var(--text-semi-light);
+}
+.half-size{
+    width: 50%;
+}
+h1{
+    font-weight: 800;
+    line-height: 1em;
+    font-size: calc(var(--font-size)*1.8);
+
+}
+h4 {
+    color: var(--text-dark);
+    font-size: calc(var(--font-size)*0.8);
+}
+h1, p{
+    padding: var(--padding-medium);
+}
+p{
+    font-weight: 100;
+    line-height: 1.8em;
+    font-size: var(--font-size);
+}
+body > header {
+    display: flex;
+    padding: 10%;
+}
+.tittle > h1{
+    width: 75%;
+}
+.rated{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.stars{
+    display: block;
+    margin-right: var(--padding-small);
+}
+aside {
+    margin-top: 5vh;
+}
+aside > section {
+    margin: calc(1vw + 1vh);
+    padding: var(--padding-small);
+    display: flex;
+    border-radius: 8px;
+}
+
+aside > section:first-child{
+    margin-right: calc(var(--padding-medium)*2.5);
+}
+aside > section:nth-child(2){
+    margin-left: calc(var(--padding-medium)*1.5);
+    margin-right: calc(var(--padding-medium)*1.5);
+}aside > section:nth-child(3){
+    margin-left: calc(var(--padding-medium)*2.5);
+}
+.card {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--background-dark);
+    border-radius: 8px;}
+
+    .card:nth-child(2){
+        margin-top: var(--padding-medium);
+    }
+    .card:nth-child(3){
+        margin-top: calc(var(--padding-medium)*2);
+    }
+        
+.card img {
+    border-radius: 50%;
+    width: var(--img-size);
+    height: var(--img-size);
+    max-width: var(--img-max-size);
+    max-height: var(--img-max-size);
+    min-width: var(--img-min-size);
+    min-height: var(--img-min-size);
+}
+.card p {
+    color: var(--text-semi-light);
+    padding: var(--padding-small);
+    text-align: justify;
+    font-size: calc(var(--font-size)*0.6);
+}
+.card p::first-letter{
+    padding-left: var(--padding-medium);
+}
+.card > header{
+    display: flex;
+    padding: var(--padding-small);
+    padding-bottom: 0;
+}
+.card > header > figure{
+    margin-right: var(--padding-small);
+    display: flex;
+    align-items: center;
+}
+.card > header > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 850px) {
+    header {
+        flex-direction: column;
+    }
+    p{
+        text-align: justify;
+        padding: 1vw 10vw 5px 2vw;
+    }
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    h3 {
+        font-size: calc(var(--font-size));
+    }
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 13px;
+    }
+    .half-size{
+    width: 100%;    
+    }
+    aside {
+        margin-top: 1vh;
+    }
+    body > main{
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        flex-flow: row nowrap;
+        margin-bottom: 2vh;
+    }
+    .card > header {
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+    .card > article {
+        width: 60%;
+    }
+  }

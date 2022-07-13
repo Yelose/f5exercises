@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+body>main {
+    background-image: url("../img/la-casa-de-papel-22.webp");
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width: 100%;
+}
+
+section {
+    background-image: url("../img/billetequinientos.jpg");
+    display: flex;
+    flex-direction: column;
+    width: calc(30vw + 30vh);
+    height: calc(15vw + 15vh);
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: calc(2.5vw + 2.5vh);
+    gap: calc(1vw + 1vh);
+}
+
+#coin {
+    height: calc(10vw + 10vh);
+    width: calc(10vw + 10vh);
+    position: relative;
+    margin: 0;
+    transform-style: preserve-3d;
+}
+
+#coin img {
+    width: 100%;
+}
+
+.tails {
+    transform: rotateX(180deg);
+}
+
+.heads,
+.tails {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+button{
+    padding: calc(.6vw + .6vh) calc(2vw + 2vh);
+    background-color:#f5f75f;
+    border: none;
+    box-shadow: 2px 2px 3px black;
+    color: hsl(271, 76%, 23%);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: clamp(12px, 1.5vw, 20px);
+}
+
+@keyframes flip-heads {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(2520deg);
+    }
+}
+
+@keyframes flip-tails {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(2340deg);
+    }
+}

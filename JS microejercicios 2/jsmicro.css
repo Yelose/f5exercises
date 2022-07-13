@@ -15,17 +15,35 @@ header a div {
     background-position: center;
     background-size: cover;
 }
-.higher-container div {
+.exercise-container div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
+
 p {
     padding: 2vh 3vw;
 }
 input {
     padding: 1vh 1vw;
 }
-.higher-btn {
+.exercise-btn {
     color: white;
+}
+.exercise-btn:hover {
+    background-color: hsl(180, 92%, 7%);
+    color: hsl(180, 92%, 93%);
+    cursor: pointer;
+}
+#result-vowels {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#result-vowels p {
+    background-color: hsl(180, 92%, 7%);
+    border-radius: 5px;
+    border: 3px solid hsla(180, 94%, 3%, 0.5);
+    margin-top: 2vh;
 }

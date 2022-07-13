@@ -123,6 +123,9 @@ ol li {
 .recipe {
     background-image: url(img/recipe.PNG);
 }
+.cara-cruz{
+    background-image: url(img/caraocruz.PNG);
+}
 footer {
     display: flex;
     background-color: hsl(180, 92%, 10%);
