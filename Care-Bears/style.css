@@ -1,0 +1,75 @@
+body{
+    background-color: hsl(180, 92%, 3%);
+}
+h1{
+    font-size: clamp(11px, 4.5vw, 36px);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: calc(1vw + 1vh);
+    grid-auto-flow: row;
+    grid-template-areas:
+        "tittle tittle tittle tittle tittle bears bears bears bears bears"
+        "pink-bear pink-bear green-bear green-bear care-Bears care-Bears care-Bears care-Bears yellow-bear yellow-bear"
+        "bears-queue bears-queue bears-queue bears-queue care-Bears care-Bears care-Bears care-Bears blue-bear blue-bear"
+        "pijama-bear pijama-bear red-bear red-bear love-all love-all love-all love-all love-all love-all";
+    max-width: calc(100vh);
+}
+
+.bears {
+    grid-area: bears;
+}
+
+.tittle {
+    grid-area: tittle;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.pink-bear {
+    grid-area: pink-bear;
+}
+
+.green-bear {
+    grid-area: green-bear;
+}
+
+.yellow-bear {
+    grid-area: yellow-bear;
+}
+
+.care-Bears {
+    grid-area: care-Bears;
+}
+
+.bears-queue {
+    grid-area: bears-queue;
+}
+
+.blue-bear {
+    grid-area: blue-bear;
+}
+
+.pijama-bear {
+    grid-area: pijama-bear;
+}
+
+.red-bear {
+    grid-area: red-bear;
+}
+
+.love-all {
+    grid-area: love-all;
+}

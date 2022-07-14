@@ -126,6 +126,11 @@ ol li {
 .cara-cruz{
     background-image: url(img/caraocruz.PNG);
 }
+.care-bears{
+    background-image: url(img/ejercicio-osos-grid.png);
+    width: 300px;
+    height: 300px;
+}
 footer {
     display: flex;
     background-color: hsl(180, 92%, 10%);
