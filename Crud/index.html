@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coundivies CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/4029e392d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="theme">
+            <p>Theme Color:</p>
+            <div id="green"></div>
+            <div id="purple"></div>
+            <div id="blue"></div>
+            <div id="brown"></div>
+        </div>
+        <div>
+            <h1>Simple To Do List</h1>
+        </div>
+    </header>
+    <br>
+    <form action="javascript:void(0);" meh3od="POST" onsubmit="app.Add()">
+        <input type="text" id="add-name" placeholder="Write a task">
+        <input type="submit" value="Add">
+    </form>
+    <br>
+    <div id="spoiler" role="aria-hidden">
+        <form action="javascript:void(0);" meh3od="POST" id="saveEdit">
+            <input type="text" id="edit-name">
+            <input type="submit" value="Edit" onclick="CloseInput()" />
+        </form>
+    </div>
+    <br>
+    <p id="counter"></p>
+
+    <div class="tasks-container">
+        <div class="tasks-tittle">
+            <h3>Name</h3>
+            <h3>Actions:</h3>
+        </div>
+        <div id="tasks">
+        </div>
+    </div>
+
+</body>
+
+</html>

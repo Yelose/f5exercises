@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root .blue-theme {
+    --main-color: 220;
+}
+
+:root .brown-theme{
+    --main-color: 20;
+}
+
+:root {
+    --main-color: 220;
+    --bg-dark: hsl(var(--main-color), 10%, 10%);
+    --bg-light: hsl(var(--main-color), 90%, 95%);
+    --text-dark: hsl(var(--main-color), 25%, 8%);
+    --text-light: hsl(var(--main-color), 100%, 98%);
+    --theme-bg-color: hsl(var(--main-color), 60%, 40%);
+    --padding-big: calc(3vw + 3vh);
+    --padding-medium: calc(1.5vw + 1.5vh);
+    --padding-small: calc(.5vw + .5vh);
+    --border-radius: calc(.2vw + .2vh);
+}
+
+html {
+    margin: calc(1vw + 2vh) calc(2vw + 2vh);
+    color: var(--text-dark);
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+body>header {
+    background-color: var(--bg-dark);
+    padding: var(--padding-medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: calc(.5vw + .5vh);
+    color: var(--text-light);
+    gap: 5vh;
+}
+
+.theme {
+    display: flex;
+    gap: var(--padding-small);
+    background-color: var(--bg-light);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius);
+}
+
+.theme>div {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.theme>p {
+    color: var(--text-dark);
+}
+#green {
+    background-color: hsl(140, 60%, 40%);
+}
+
+#purple {
+    background-color: hsl(280, 60%, 40%);
+}
+
+#blue {
+    background-color: hsl(220, 60%, 40%);
+}
+
+#brown {
+    background-color: hsl(20, 60%, 40%)
+}
+
+h3,
+p {
+    padding: var(--padding-small) var(--padding-medium);
+}
+
+h3 {
+    padding-right: calc(var(--padding-small)*1.1);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 75%;
+    border-color: var(--theme-bg-color);
+}
+
+input[type='submit'],
+button,
+[aria-label] {
+    cursor: pointer;
+    padding: var(--padding-small);
+    border-radius: var(--border-radius);
+    color: var(--bg-light);
+}
+
+input[type="submit"] {
+    background-color: var(--theme-bg-color);
+    color: var(--text-light);
+    width: 20%;
+    border-color: var(--bg-light);
+}
+
+button {
+    border: none;
+}
+
+#spoiler {
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-light);
+}
+
+.tasks {
+    padding: 2px;
+}
+
+.tasks-tittle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-row {
+    margin: 2px 0;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 2px;
+}
+
+.actions {
+    display: flex;
+    padding: 2px;
+    gap: 2px;
+    padding-right: var(--padding-small);
+}
+
+#add-name,
+#edit-name {
+    background-color: var(--bg-light);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius);
+}
+
+.edit>button {
+    background-color: var(--theme-bg-color);
+}
+
+.delete>button {
+    background-color: hsl(0, 50%, 50%);
+}

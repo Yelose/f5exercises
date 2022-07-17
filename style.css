@@ -111,8 +111,14 @@ article {
     box-shadow: 1px 2px 1px hsl(180, 92%, 20%);
     text-align: center;
 }
+.cities-in-the-world {
+    background-image: url(img/cities-in-the-world.png);
+}
 .esponja {
     background-image: url(img/BobEsponja.png);
+}
+.to-do-list{
+    background-image: url(img/toDoList.png);
 }
 ol {
     padding: 1vw;
